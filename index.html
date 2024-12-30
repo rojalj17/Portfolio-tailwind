@@ -60,26 +60,32 @@
     </script>
 
 
-    <div class="bg-cover bg-fixed bg-center  h:96 md:h-screen" style="background-image: url('./media/img.avif');"
+    <div class="bg-cover bg-fixed bg-center h-96 md:h-screen" style="background-image: url('./media/img.avif');"
         id="home">
-        <div class="h-full w-full bg-black/50 flex items-center text-left text-white px-8">
-            <div class="max-w-xl ">
-                <!-- <h4 class="text-purple-400 text-sm uppercase mb-2">Take a trip into paradise</h4> -->
-                <h2 class="text-7xl font-extrabold mb-4 whitespace-nowrap">Hi, I am Rojal Jyothish</h2>
-                <p class="text-lg md:text-4xl mb-6 ">Full Stack Developer</p>
-                <div class="flex items-center space-x-4 ">
+        <div class="h-full w-full bg-black/50 flex items-center text-left text-white px-6 sm:px-12">
+            <div class="max-w-2xl">
+                <!-- Title -->
+                <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 whitespace-normal">
+                    Hi, I am Rojal Jyothish
+                </h2>
+                <!-- Subtitle -->
+                <p class="text-base sm:text-lg md:text-2xl lg:text-4xl mb-6">Full Stack Developer</p>
+                <!-- Social Links -->
+                <div class="flex items-center space-x-4">
                     <a href="https://www.instagram.com/rojal.__/?hl=en"
-                        class="text-white hover:text-purple-400 text-2xl">
+                        class="text-white hover:text-purple-400 text-xl md:text-2xl">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/rojal15/" class="text-white hover:text-purple-400 text-2xl">
+                    <a href="https://www.linkedin.com/in/rojal15/"
+                        class="text-white hover:text-purple-400 text-xl md:text-2xl">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/rojalj17" class="text-white hover:text-purple-400 text-2xl">
+                    <a href="https://github.com/rojalj17" class="text-white hover:text-purple-400 text-xl md:text-2xl">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
-                <button class="mt-6 bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-400 ">
+                <!-- Download CV Button -->
+                <button class="mt-6 bg-purple-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-purple-400">
                     <a href="./media/ROJAL_CV.pdf">DOWNLOAD CV</a>
                 </button>
             </div>
@@ -91,7 +97,7 @@
         <div class="container mx-auto text-center">
             <img src="./media/pic.jpg" alt="Hero Image"
                 class="mx-auto rounded-full w-40 h-40 mb-6 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-            <!-- <h2 class="text-4xl font-extrabold mb-4">Hi, I'm Rojal Jyothish</h2> -->
+
             <p class="text-xl mb-6 px-6">I’m a full stack developer with a passion for creating efficient and engaging
                 digital solutions. With a strong foundation in both front-end and back-end technologies, I excel at
                 building dynamic, responsive, and scalable web applications from the ground up. My expertise spans
@@ -134,46 +140,47 @@
 
 
     <!-- My Journey Section -->
-    <section class="bg-gray-50 text-black py-20 px-52 " id="journey">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12">My Journey</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Education Section -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Education</h3>
-                    <div class="border border-purple-400 rounded-lg p-4 mb-4">
-                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> 2021-2024</p>
-                        <p class="font-semibold">Bachelor of Computer Science</p>
-                        <p class="text-sm">Percentage: 70.017%</p>
-                    </div>
-                    <div class="border border-purple-400 rounded-lg p-4 mb-4">
-                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> 2021</p>
-                        <p class="font-semibold">Computer Science</p>
-                        <p class="text-sm">Percentage: 89.4%</p>
-                    </div>
-                    <div class="border border-purple-400 rounded-lg p-4">
-                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> 2019</p>
-                        <p class="font-semibold">Secondary Education</p>
-                        <p class="text-sm">Percentage: 83.3%</p>
-                    </div>
+<section class="bg-gray-50 text-black py-10 px-6 md:py-20 md:px-16 lg:px-32" id="journey">
+    <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">My Journey</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Education Section -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Education</h3>
+                <div class="border border-purple-400 rounded-lg p-4 mb-4">
+                    <p class="text-sm md:text-base mb-2"><i class="fas fa-calendar-alt"></i> 2021-2024</p>
+                    <p class="font-semibold">Bachelor of Computer Science</p>
+                    <p class="text-sm md:text-base">Percentage: 70.017%</p>
                 </div>
-                <!-- Internship Section -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Internship</h3>
-                    <div class="border border-purple-400 rounded-lg p-4">
-                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> Oct 2024 - Ongoing</p>
-                        <p class="font-semibold">MERN Stack Development</p>
-                        <p>Company: Luminar Technolab, Kerala, India</p>
-                        <ul class="list-disc list-inside mt-4 text-left">
-                            <li>Develop full-stack web applications using MERN stack technologies.</li>
-                            <li>Collaborate in Agile teams with Git version control.</li>
-                            <li>Optimize applications for performance and scalability.</li>
-                        </ul>
-                    </div>
+                <div class="border border-purple-400 rounded-lg p-4 mb-4">
+                    <p class="text-sm md:text-base mb-2"><i class="fas fa-calendar-alt"></i> 2021</p>
+                    <p class="font-semibold">Computer Science</p>
+                    <p class="text-sm md:text-base">Percentage: 89.4%</p>
+                </div>
+                <div class="border border-purple-400 rounded-lg p-4">
+                    <p class="text-sm md:text-base mb-2"><i class="fas fa-calendar-alt"></i> 2019</p>
+                    <p class="font-semibold">Secondary Education</p>
+                    <p class="text-sm md:text-base">Percentage: 83.3%</p>
+                </div>
+            </div>
+            <!-- Internship Section -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Internship</h3>
+                <div class="border border-purple-400 rounded-lg p-4">
+                    <p class="text-sm md:text-base mb-2"><i class="fas fa-calendar-alt"></i> Oct 2024 - Ongoing</p>
+                    <p class="font-semibold">MERN Stack Development</p>
+                    <p class="text-sm md:text-base">Company: Luminar Technolab, Kerala, India</p>
+                    <ul class="list-disc list-inside mt-4 text-sm md:text-base">
+                        <li>Develop full-stack web applications using MERN stack technologies.</li>
+                        <li>Collaborate in Agile teams with Git version control.</li>
+                        <li>Optimize applications for performance and scalability.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
     <section id="projects" class="bg-black text-gray-200 py-20">
@@ -248,11 +255,12 @@
                     </video>
                     <div class="p-4">
                         <h3 class="text-xl font-bold mb-2 text-white">Apple Website</h3>
-                        <p class="text-sm text-gray-400 mb-4">A responsive website replicating Apple's sleek design using HTML,
+                        <p class="text-sm text-gray-400 mb-4">A responsive website replicating Apple's sleek design
+                            using HTML,
                             CSS, and Bootstrap.</p>
                         <p class="text-xs font-bold mt-2 text-white mb-2">Github Link: <a
-                                href="https://github.com/rojalj17/apple-website"
-                                class="hover:text-purple-400"> https://github.com/rojalj17/apple-website</a>
+                                href="https://github.com/rojalj17/apple-website" class="hover:text-purple-400">
+                                https://github.com/rojalj17/apple-website</a>
                         </p>
                         <a href="https://apple-website-indol-one.vercel.app/"
                             class="block text-center bg-purple-400 text-white py-2 px-4 rounded hover:bg-purple-300 mt-12">View
@@ -268,19 +276,20 @@
                     </video>
                     <div class="p-4">
                         <h3 class="text-xl font-bold mb-2 text-white">Portfolio Website</h3>
-                        <p class="text-sm text-gray-400 mb-4">A personal portfolio website showcasing skills and projects built
+                        <p class="text-sm text-gray-400 mb-4">A personal portfolio website showcasing skills and
+                            projects built
                             with HTML and Css.</p>
                         <p class="text-xs font-bold mt-2 text-white mb-2">Github Link: <a
-                                href="https://github.com/rojalj17/Portfolio"
-                                class="hover:text-purple-400"> https://github.com/rojalj17/Portfolio</a>
+                                href="https://github.com/rojalj17/Portfolio" class="hover:text-purple-400">
+                                https://github.com/rojalj17/Portfolio</a>
                         </p>
                         <a href="https://portfolio-coral-five-66.vercel.app/"
                             class="block text-center bg-purple-400 text-white py-2 px-4 rounded hover:bg-purple-300 mt-4">View
                             Project</a>
                     </div>
                 </div>
-                
-        </div>
+
+            </div>
     </section>
 
     <!-- skill sectiom -->
@@ -374,7 +383,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-6 text-center">
