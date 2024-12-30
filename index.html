@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rojal Jyothish Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- NAVBAR -->
+    <header class="bg-gray-900 text-white py-5 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">PORTFOLIO</h1>
+            <!-- Mobile Menu Button -->
+            <div class="sm:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop Menu -->
+            <nav id="navLinks" class="hidden sm:flex space-x-10 text-md">
+                <a href="#home" class="block hover:text-purple-400">HOME</a>
+                <a href="#about" class="block hover:text-purple-400">ABOUT</a>
+                <a href="#journey" class="block hover:text-purple-400">JOURNEY</a>
+                <a href="#projects" class="block hover:text-purple-400">PROJECTS</a>
+                <a href="#skills" class="block hover:text-purple-400">SKILLS</a>
+                <a href="#contact" class="block hover:text-purple-400">CONTACT</a>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden sm:hidden flex flex-col space-y-2 mt-4 px-6">
+            <a href="#home" class="block hover:text-purple-400">HOME</a>
+            <a href="#about" class="block hover:text-purple-400">ABOUT</a>
+            <a href="#journey" class="block hover:text-purple-400">JOURNEY</a>
+            <a href="#projects" class="block hover:text-purple-400">PROJECTS</a>
+            <a href="#skills" class="block hover:text-purple-400">SKILLS</a>
+            <a href="#contact" class="block hover:text-purple-400">CONTACT</a>
+        </div>
+    </header>
+
+    <!-- JavaScript to Toggle Mobile Menu -->
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+    <div class="bg-cover bg-fixed bg-center  h:96 md:h-screen" style="background-image: url('./media/img.avif');"
+        id="home">
+        <div class="h-full w-full bg-black/50 flex items-center text-left text-white px-8">
+            <div class="max-w-xl ">
+                <!-- <h4 class="text-purple-400 text-sm uppercase mb-2">Take a trip into paradise</h4> -->
+                <h2 class="text-7xl font-extrabold mb-4 whitespace-nowrap">Hi, I am Rojal Jyothish</h2>
+                <p class="text-lg md:text-4xl mb-6 ">Full Stack Developer</p>
+                <div class="flex items-center space-x-4 ">
+                    <a href="https://www.instagram.com/rojal.__/?hl=en"
+                        class="text-white hover:text-purple-400 text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rojal15/" class="text-white hover:text-purple-400 text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/rojalj17" class="text-white hover:text-purple-400 text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <button class="mt-6 bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-400 ">
+                    <a href="./media/ROJAL_CV.pdf">DOWNLOAD CV</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto text-center">
+            <img src="./media/pic.jpg" alt="Hero Image"
+                class="mx-auto rounded-full w-40 h-40 mb-6 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+            <!-- <h2 class="text-4xl font-extrabold mb-4">Hi, I'm Rojal Jyothish</h2> -->
+            <p class="text-xl mb-6 px-6">I’m a full stack developer with a passion for creating efficient and engaging
+                digital solutions. With a strong foundation in both front-end and back-end technologies, I excel at
+                building dynamic, responsive, and scalable web applications from the ground up. My expertise spans
+                across multiple programming languages, frameworks, and databases, enabling me to deliver seamless user
+                experiences and robust.</p>
+            <p class="text-xl mb-6 px-6">When I'm not coding, you can find me exploring new technologies, contributing
+                to open-source projects, or experimenting with personal development projects that challenge and expand
+                my skillset.</p>
+            <!-- <a href="#contact" class="bg-blue-500 px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-600">Get
+                in Touch</a> -->
+        </div>
+        <div class=" text-center">
+            <div class="text-xl mb-3">
+                <i class="fa-solid fa-user"></i>
+                <span> Rojal Jyothish</span>
+            </div>
+            <div class="text-xl mb-2">
+                <i class="fa-solid fa-phone"></i>
+                <span> 9563220044</span>
+            </div>
+            <div class="text-xl mb-2">
+                <i class="fa-solid fa-envelope"></i>
+                <span><a href="https://rojaljyo@gmail.com" class="hover:text-purple-400">rojaljyo@gmail.com</a> </span>
+            </div>
+            <div class="text-xl mb-2">
+                <i class="fa-brands fa-github"></i>
+                <span><a href="https://github.com/rojalj17"
+                        class="hover:text-purple-400">https://github.com/rojalj17</a> </span>
+            </div>
+            <div class="text-xl mb-2">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span><a href="https://www.linkedin.com/in/rojal15/"
+                        class="hover:text-purple-400">https://www.linkedin.com/in/rojal15/</a> </span>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- My Journey Section -->
+    <section class="bg-gray-50 text-black py-20 px-52 " id="journey">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">My Journey</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Education</h3>
+                    <div class="border border-purple-400 rounded-lg p-4 mb-4">
+                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> 2021-2024</p>
+                        <p class="font-semibold">Bachelor of Computer Science</p>
+                        <p class="text-sm">Percentage: 70.017%</p>
+                    </div>
+                    <div class="border border-purple-400 rounded-lg p-4 mb-4">
+                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> 2021</p>
+                        <p class="font-semibold">Computer Science</p>
+                        <p class="text-sm">Percentage: 89.4%</p>
+                    </div>
+                    <div class="border border-purple-400 rounded-lg p-4">
+                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> 2019</p>
+                        <p class="font-semibold">Secondary Education</p>
+                        <p class="text-sm">Percentage: 83.3%</p>
+                    </div>
+                </div>
+                <!-- Internship Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Internship</h3>
+                    <div class="border border-purple-400 rounded-lg p-4">
+                        <p class="text-sm mb-2"><i class="fas fa-calendar-alt"></i> Oct 2024 - Ongoing</p>
+                        <p class="font-semibold">MERN Stack Development</p>
+                        <p>Company: Luminar Technolab, Kerala, India</p>
+                        <ul class="list-disc list-inside mt-4 text-left">
+                            <li>Develop full-stack web applications using MERN stack technologies.</li>
+                            <li>Collaborate in Agile teams with Git version control.</li>
+                            <li>Optimize applications for performance and scalability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="bg-black text-gray-200 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Project Card 1 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <video class="w-full h-48 object-cover" controls>
+                        <source src="./media/Education Meeting HTML5 Template - Google Chrome 2024-11-02 13-09-55.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">Project Management System</h3>
+                        <p class="text-sm text-gray-400 mb-20">A robust intranet application developed using Python,
+                            Android,
+                            Java, and MySQL.</p>
+                        <a href="https://github.com/rojalj17/Vajrami_Event_Management"
+                            class="block text-center bg-purple-400 text-white py-2 px-4 rounded hover:bg-purple-300">View
+                            Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <video class="w-full h-48 object-cover" controls>
+                        <source src="./media/event.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">Vajrami Event Management Website</h3>
+                        <p class="text-sm text-gray-400 mb-2">An event management platform designed with Tailwind CSS
+                        </p>
+                        <p class="text-xs font-bold mt-2 text-white mb-2">Github Link: <a
+                                href="https://github.com/rojalj17/Vajrami_Event_Management"
+                                class="hover:text-purple-400"> https://github.com/rojalj17/Vajrami_Event_Management</a>
+                        </p>
+                        <a href="https://vajrami-event-management.vercel.app/"
+                            class="block text-center bg-purple-400 text-white py-2 px-4 rounded hover:bg-purple-300 mt-3">View
+                            Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <video class="w-full h-48 object-cover" controls>
+                        <source src="./media/Sogno Clothing.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">E-commerce Platform</h3>
+                        <p class="text-sm text-gray-400 mb-4">A fully responsive e-commerce platform featuring secure
+                            payment
+                            gateways.</p>
+                        <p class="text-xs font-bold mt-2 text-white mb-2">Github Link: <a
+                                href="https://github.com/rojalj17/E-commerce-website"
+                                class="hover:text-purple-400">https://github.com/rojalj17/E-commerce-website</a>
+                        </p>
+                        <a href="https://sogno-website.vercel.app/"
+                            class="block text-center bg-purple-400 text-white py-2 px-4 rounded hover:bg-purple-300 mt-8">View
+                            Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <video class="w-full h-48 object-cover" controls>
+                        <source src="./media/apple.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">Apple Website</h3>
+                        <p class="text-sm text-gray-400 mb-4">A responsive website replicating Apple's sleek design using HTML,
+                            CSS, and Bootstrap.</p>
+                        <p class="text-xs font-bold mt-2 text-white mb-2">Github Link: <a
+                                href="https://github.com/rojalj17/apple-website"
+                                class="hover:text-purple-400"> https://github.com/rojalj17/apple-website</a>
+                        </p>
+                        <a href="https://apple-website-indol-one.vercel.app/"
+                            class="block text-center bg-purple-400 text-white py-2 px-4 rounded hover:bg-purple-300 mt-12">View
+                            Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 5 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <video class="w-full h-48 object-cover" controls>
+                        <source src="./media/portfolio.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">Portfolio Website</h3>
+                        <p class="text-sm text-gray-400 mb-4">A personal portfolio website showcasing skills and projects built
+                            with HTML and Css.</p>
+                        <p class="text-xs font-bold mt-2 text-white mb-2">Github Link: <a
+                                href="https://github.com/rojalj17/Portfolio"
+                                class="hover:text-purple-400"> https://github.com/rojalj17/Portfolio</a>
+                        </p>
+                        <a href="https://portfolio-coral-five-66.vercel.app/"
+                            class="block text-center bg-purple-400 text-white py-2 px-4 rounded hover:bg-purple-300 mt-4">View
+                            Project</a>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <!-- skill sectiom -->
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <section id="skills" class="bg-gray-50 text-gray-800 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-down">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Skill 1 -->
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDia1M4fTyyFT_yPbamzW6JGy_e7ZsywQQuGydrdu3EX1vRubhIf6qM1puL1n-c4Pb6IM&usqp=CAU"
+                        alt="Python Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">Python</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://ih1.redbubble.net/image.5332351313.5787/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
+                        alt="Java Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">Java</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://www.shutterstock.com/image-illustration/programming-language-3d-icon-illustration-260nw-2174501027.jpg"
+                        alt="MongoDB Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">C++</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/013/313/458/small_2x/html-icon-3d-rendering-illustration-free-vector.jpg"
+                        alt="HTML Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">HTML</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://logowik.com/content/uploads/images/css-icon5555.logowik.com.webp" alt="CSS Icon"
+                        class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">CSS</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkUnHIQcoUkCyruF8Acqxht94cMgKDVCSng&s"
+                        alt="JavaScript Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="https://w7.pngwing.com/pngs/771/978/png-transparent-tailwind-css-css-framework-customizable-low-level-tailwind-logo-3d-icon-thumbnail.png"
+                        alt="Tailwind CSS Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">Tailwind CSS</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="800">
+                    <img src="https://logowik.com/content/uploads/images/bootstrap-new725.logowik.com.webp"
+                        alt="Bootstrap Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">Bootstrap</p>
+                </div>
+                <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="900">
+                    <img src="https://camo.githubusercontent.com/fc66ef99cb67edd4ee509156c14a7ee7e8dde905b461acb8c1289a1e0174ee75/68747470733a2f2f7777772e7668762e72732f64706e672f642f3230382d323038313431365f646a616e676f2d646576656c6f706d656e742d706e672d7472616e73706172656e742d646a616e676f2d6c6f676f2d706e672d646f776e6c6f61642e706e67"
+                        alt="Django Icon" class="w-16 h-16 mb-4">
+                    <p class="text-xl font-semibold">Django</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 flex justify-center items-center min-h-screen">
+            <div class="w-full max-w-lg">
+                <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+                <form class="w-full flex flex-col items-center">
+                    <div class="mb-4 w-full">
+                        <label for="name" class="block text-sm font-medium">Name</label>
+                        <input type="text" id="name"
+                            class="w-full mt-1 p-2 border border-gray-300 rounded-lg text-black">
+                    </div>
+                    <div class="mb-4 w-full">
+                        <label for="email" class="block text-sm font-medium">Email</label>
+                        <input type="email" id="email"
+                            class="w-full mt-1 p-2 border border-gray-300 rounded-lg text-black">
+                    </div>
+                    <div class="mb-4 w-full">
+                        <label for="message" class="block text-sm font-medium">Message</label>
+                        <textarea id="message" rows="4"
+                            class="w-full mt-1 p-2 border border-gray-300 rounded-lg text-black"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-blue-500 px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-600">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 Rojal Jyothish. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
